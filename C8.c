@@ -7,7 +7,6 @@
 #include <stdio.h>
 
 int main() {
-  printf("请继续输入哈哈哈哈");
   for (int i = 1; i <= 9; i++) {
     for (int j = 1; j <= i; j++) {
       printf("%d × %d = %d\t", j, i, j * i);

@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 /**
- * 题目：利用递归方法求5!。
+ * 题目：求1+2!+3!+...+20!的和。
  */
-int recursion(int n) {
-    return n == 1 ? n : n * recursion(n - 1);
-}
-
 int main() {
-    int n = 0;
-    printf("please enter number:");
-    scanf("%d", &n);
-
-    printf("result = %d\n", recursion(n));
+    long double sum = 0;
+    int i;
+    long double a = 1;
+    for (i = 1; i <= 20; i++) {
+        a = a * i;
+        sum += a;
+    }
+    printf("sum=%Lf\n", sum);
     return 0;
 }

@@ -1,45 +1,25 @@
 #include <stdio.h>
 
 /**
- * 题目：请输入星期几的第一个字母来判断一下是星期几，如果第一个字母一样，则继续判断第二个字母。
+ * 题目：一个5位数，判断它是不是回文数。即12321是回文数，个位与万位相同，十位与千位相同。
  */
-int main(int argc, char const *argv[]) {
-    char s;
-    printf("please enter first letter:");
-    scanf("%s", &s);
-    switch (s) {
-        case 'm':
-            printf("monday\n");
-            break;
-        case 't':
-            printf("please enter next one of letter:");
-            scanf("%s", &s);
-            if (s == 'u') {
-                printf("tuesday\n");
-            } else if (s == 'h') {
-                printf("thursday\n");
-            } else {
-                printf("unknown\n");
-            }
-            break;
-        case 'w':
-            printf("wednesday\n");
-            break;
-        case 'f':
-            printf("friday\n");
-            break;
-        case 's':
-            printf("please enter next one of letter:");
-            s = getchar();
-            if (s == 'a') {
-                printf("saturday\n");
-            } else if (s == 'u') {
-                printf("sunday\n");
-            } else {
-                printf("unknown\n");
-            }
-            break;
-    }
 
+int main(int argc, char const *argv[]) {
+    int n;
+
+    printf("please enter five of number:");
+    scanf("%d", &n);
+
+    int a = n / 10000;
+    int b = n % 10;
+
+    int c = n % 10000 / 1000;
+    int d = n % 100 / 10;
+
+    if (a == b && c == d) {
+        printf("回文数字");
+    } else {
+        printf("不是回文数字");
+    }
     return 0;
 }

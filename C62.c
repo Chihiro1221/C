@@ -4,7 +4,6 @@
 /**
  * 在不适用strcmp函数，实现两个字符串比较
  */
-
 int myStrcmp(char *s1, char *s2) {
     int len1 = sizeof(s1) / sizeof(char);
     int len2 = sizeof(s2) / sizeof(char);

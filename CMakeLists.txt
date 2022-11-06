@@ -23,3 +23,6 @@ add_executable(C31 C31.c)
 add_executable(C33.c C33.c)
 add_executable(C35 C35.c)
 add_executable(C36 C36.c)
+
+add_executable(C69 C69.c)
+add_executable(C70 C70.c)

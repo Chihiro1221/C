@@ -26,3 +26,6 @@ add_executable(C36 C36.c)
 
 add_executable(C69 C69.c)
 add_executable(C70 C70.c)
+add_executable(C71 C71.c)
+add_executable(C75 C75.c)
+add_executable(C76 C76.c)
